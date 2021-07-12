@@ -1,0 +1,29 @@
+public void start(Stage stage) 
+{
+    stage.setTitle("Color Game"); //set the game title
+    Text text = new Text();
+		text.setText("Guess three same color boxes in order to win"); // add text
+		text.setFill(Color.BLACK); //add color to the text
+		text.setFont(Font.font("Times New Roman",10)); //size of the text
+		gridPane.getChildren().add(text);
+    Image image= new Image("utplogo2.png"); //add the game icon
+		stage.getIcons().add(image); //to show the icon on the application screen
+	}
+
+
+
+protected void printResult() 
+{
+  if (clickCount == 3) 
+    {
+      if (isWrongBoxClicked) 
+      {
+        resultLabel.setText("Lost!"); //to show the text
+	      resultLabel.setTextFill(Color.RED); //set the text color
+      } 
+        else 
+          {
+             resultLabel.setText("Winner!"); //to show the text
+	           resultLabel.setTextFill(Color.GREEN); //set the color
+	        }       
+}
