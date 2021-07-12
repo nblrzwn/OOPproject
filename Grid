@@ -1,0 +1,25 @@
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
+
+
+public class Grid extends Main{
+	public void gridpane() {
+	
+         
+         gridPane = new GridPane();
+         gridPane.setAlignment(Pos.CENTER);
+         gridPane.setHgap(10);
+         gridPane.setVgap(10);
+         gridPane.setPadding(new Insets(25, 25, 25, 25));
+         
+         resultLabel = new Label();
+         gridPane.add(resultLabel, 1, 0);
+         
+         
+         
+		
+	}
+
+}
