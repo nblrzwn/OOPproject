@@ -1,3 +1,4 @@
+(Surendren Munusamy)
 public void start(Stage stage) 
 {
     stage.setTitle("Color Game"); //set the game title
@@ -11,7 +12,7 @@ public void start(Stage stage)
 	}
 
 
-
+(Nabil Rizwaan)
 protected void printResult() 
 {
   if (clickCount == 3) 
